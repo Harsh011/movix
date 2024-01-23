@@ -43,7 +43,7 @@ const DetailsBanner = ({ video, crew }) => {
           {!!data && (
             <React.Fragment>
               <div className="backdrop-img">
-                <Img src={url.backdrop + data.backdrop_path} alt="" />
+                <Img src={url.backdrop + data.backdrop_path} />
               </div>
               <div className="opacity-layer"></div>
               <ContentWrapper>

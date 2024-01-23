@@ -10,7 +10,6 @@ import Expore from "./pages/explore/Expore";
 import PageNotFound from "./pages/404/PageNotFound";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/footer";
-import { all } from "axios";
 
 function App() {
   const dispatch = useDispatch();
@@ -43,7 +42,7 @@ function App() {
     });
 
     const data = await Promise.all(promises);
-    console.log(data);
+    // console.log(data);
     data.map(({ genres }) => {
       return genres.map((item) => (allGenres[item.id] = item));
     });
